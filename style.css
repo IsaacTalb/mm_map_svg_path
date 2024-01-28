@@ -1,0 +1,439 @@
+.hidden {
+    display: none;
+}
+
+.navhdr {
+    background-color: #333;
+    overflow: hidden;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+}
+
+/* nav a {
+   
+    display: inline;
+    height: 400px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+} */
+
+
+.titleA{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 6px;
+    color: #ddd;
+    box-sizing: border-box;
+    border-color: aliceblue;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+nav li .titleA.active{
+    background-color: #fff;
+    color: #333;
+    border-radius: 4pt;
+}
+li{
+    display: inline;
+    margin-bottom: auto;
+    padding: 2px;
+
+}
+
+
+
+
+/* this is testing for nav, a sizing */
+/* a{
+    width: 100vw;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+} */
+
+/* @media (max-width: 1960px) {
+    nav{
+        width: 80vw;
+        height: 4vh;
+    }
+
+@media (max-width: 10px){
+    nav{
+        width: 60vw;
+        height: 20vh;
+    }
+} */
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+    font-size: medium;
+    border-radius: 4pt;
+}
+
+header {
+    background-color: #068488;
+    padding: 1px;
+    text-align: center;
+    animation: colorchange_hdr 3s ease-in 1s infinite reverse;
+}
+.hh1{
+    color: #fff;
+    display: flexbox;
+    /* animation: colorchange_h1 4s ease-in 2s infinite reverse; */
+    transition: transform 2s ease-in-out;
+}
+.hh1:hover{
+    transform: scale(0.6);
+    
+}
+
+/* @keyframes colorchange_h1 {
+    0% {color: #fff;}
+    50% {color: #407688;}
+    100% {color: #fff;}
+} */
+
+@keyframes colorchange_hdr {
+    0% {background-color: #068488;}
+    50% {background-color: #4eadca;}
+    100% {background-color: #068488;}
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    bottom: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+.a141.apm.sh{
+    color: #333;
+    font-size: medium;
+    text-align: center;
+    text-decoration: underline;
+    float: inline-start;
+    margin: 20px;
+    background-color: #5a0808;
+    border-color: #111111;
+}
+
+.a141.ms.th.apm:hover{
+    background-color: #020a0c;
+    border-color: #020a0c;
+    color: #fff;
+    text-align: justify;
+}
+
+.H-one4one {
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(188, 223, 223);
+    margin: 6px;
+    border-radius: 9px;
+}
+
+.H-phoomyat{
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(188, 223, 223);
+    margin: 6px;
+    border-radius: 9px;
+}
+.H-shinn{
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(188, 223, 223);
+    margin: 6px;
+    border-radius: 9px;
+}
+.H-Trust {
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(188, 223, 223);
+    margin: 6px;
+    border-radius: 9px;
+}
+
+.dresscode1{
+    max-width: 20%; 
+    height: 50%; 
+    padding: 6px 4px;
+    display: inline-flex;
+    
+}
+.dresscode2 {
+    max-width: 20%; 
+    height: 50%; 
+    padding: 6px 4px;
+    display: inline-flex;
+
+}
+.W-phoo{
+    justify-content: center;
+    text-align: center;
+    background-color: bisque;
+    margin: 6px;
+    padding: 8px;
+    border-radius: 9px; 
+}
+
+.W-one4one{
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(235, 222, 206);
+    margin: 6px;
+    border-radius: 9px;
+    padding: 10px 20px;
+}
+.p-ofo{
+    text-align: center;
+    font-size: medium;
+    margin: 1px;
+    padding: 1em;
+}
+.w-shinn{
+    justify-content: center;
+    text-align: center;
+    background-color:rgb(183, 193, 197);
+    margin: 6px;
+    padding: 8px;
+    border-radius: 9px; 
+}
+.w-trust{
+    justify-content: center;
+    text-align: center;
+    background-color:rgb(240, 187, 187);
+    margin: 6px;
+    padding: 8px;
+    border-radius: 9px; 
+}
+
+    /* Styles for the overlay */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(60, 152, 170, 0.858); /* Semi-transparent black overlay */
+        justify-content: center;
+        align-items: center;
+        animation: fadeInOverlay  2.5s ease forwards;
+      }
+  
+      /* Styles for the popup box */
+      .popup {
+        background: #fff; /* White background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        text-align: center;
+        animation: slideInPopup   2.5s ease forwards;
+      }
+  
+  @keyframes fadeInOverlay {
+      from{
+          opacity: 0;
+      }
+      to{
+          opacity: 10;
+      }
+  }
+  
+  @keyframes slideInPopup {
+      from{
+          transform: translateY(-50px);
+          opacity: 0;
+      }
+      to{
+          transform: translateY(0);
+          opacity: 1;
+      }
+  }
+  
+      /* Close button style */
+      .close-btn {
+        cursor: pointer;
+        color: #333;
+        font-size: 20px;
+        font-weight: 500; 
+        padding: 0px 4px;
+        float: right;
+        border: 1px solid #333;
+        border-radius: 20%;
+        transition: color 0.3s ease;
+        display: inline;
+        animation: rotateOutCloseBtn 0.5s ease forwards; /* Animation for close button */
+      }
+  
+      @keyframes fadeOutPopup {
+          from{
+              opacity: 10;
+          }
+          to{
+              opacity: 0;
+              transform: translateY(-50px);
+          } 
+      }
+  
+      @keyframes slideOutPopup {
+        from {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        to {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+      }
+  
+      .close-btn:hover{
+          color: #ffffff;
+          background-color: #000000;
+      }
+  
+      
+      @keyframes rotateOutCloseBtn {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(180deg); /* Rotate by 180 degrees on click */
+        }
+      }
+
+
+      /* Phoo Myat Styles for the overlay */
+.overlay_PM {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 216, 58, 0.778); /* Semi-transparent black overlay */
+    justify-content: center;
+    align-items: center;
+    animation: fadeInOverlay 2.5s ease forwards;
+}
+
+/* Styles for the popup box */
+.popup_PM {
+    background: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    text-align: center;
+    animation: slideInPopup 2.5s ease forwards;
+}
+
+/* Close button style */
+.close-btn_PM {
+    cursor: pointer;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 4px;
+    float: right;
+    border: 1px solid #333;
+    border-radius: 20%;
+    transition: color 0.3s ease;
+    display: inline;
+    animation: rotateOutCloseBtn 0.5s ease forwards; /* Animation for the close button */
+}
+.close-btn_PM:hover{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+@keyframes fadeInOverlay {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInPopup {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Other keyframes remain unchanged */
+
+
+.MapMM{
+ background-color: #4eadca;
+ width: 200px;
+ height: 350px;
+}
+
+
+.Kachin{
+    position: absolute;
+} .Shan{
+    position: absolute;
+} .Chin{
+    position: absolute;
+} .Sagaing{
+    position: absolute;
+} .Magway{
+    position: absolute;
+} .Mandalay{
+    position: absolute;
+} .Kayah{
+    position: absolute;
+} .Rakhine{
+    position: absolute;
+} .Bago{
+    position: absolute;
+} .Kayin{
+    position: absolute;
+} .ayeyarwaddy{
+    position: absolute;
+} .Yangon{
+    position: absolute;
+} .Tanintaryi{
+    position: absolute;
+} .Mon{
+    position: absolute;
+} .NayPyiTaw{
+    position: absolute;
+}
+
+
+.MapMM:hover{
+    background-color: #fff;
+}
