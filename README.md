@@ -1,2 +1,2 @@
-# entrepreneur_cwb
-The following documents, files and informations are under the rights of respective owners, thus do not allow to reuse and resell without their permissions. Thanks!
+# Myanmar_Map_with_SVG_Path
+You can use the following svg path elements for free, no need to give credits. Code Fun!
